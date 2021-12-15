@@ -123,8 +123,8 @@ module "aks" {
   #net_profile_dns_service_ip     = "10.2.1.10"
   #net_profile_docker_bridge_cidr = "170.10.0.1/16"
   #net_profile_service_cidr       = "10.0.0.0/16"
-  # waf_id                         = module.web_application_firewall.waf_id
-  depends_on = [module.vnet,azurerm_user_assigned_identity.agw]#, module.web_application_firewall]
+  waf_id                         = module.web_application_firewall.waf_id
+  depends_on = [module.vnet,azurerm_user_assigned_identity.agw, module.web_application_firewall]
 }
 
 

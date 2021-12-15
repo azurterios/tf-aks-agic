@@ -357,3 +357,7 @@ vars.sh
 terraform
 *terraform*
 **/*terraform*
+private_ssh_key
+*_ssh_key*
+**/*_ssh_key*
+
