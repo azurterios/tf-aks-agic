@@ -77,7 +77,7 @@ variable "tags" {
 variable "enable_log_analytics_workspace" {
   type        = bool
   description = "Enable the creation of azurerm_log_analytics_workspace and azurerm_log_analytics_solution or not"
-  default     = false
+  default     = true
 }
 
 variable "vnet_subnet_id" {
