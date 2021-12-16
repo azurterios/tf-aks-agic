@@ -1,6 +1,6 @@
 variable "address_space" {
   description = "The address space that is used by the virtual network."
-  default     = ["10.0.0.0/16"]
+  default     = ["192.168.0.0/16"]
 }
 
 
@@ -8,7 +8,7 @@ variable "address_space" {
 variable "subnet_prefixes" {
   type        = list(string)
   description = "The address prefix to use for the subnet."
-  default     = ["10.0.0.0/24", "10.0.1.0/24"]
+  default     = ["192.168.0.0/24", "192.168.1.0/24"]
 }
 
 variable "subnet_names" {
