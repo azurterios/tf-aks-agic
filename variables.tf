@@ -8,7 +8,7 @@ variable "address_space" {
 variable "subnet_prefixes" {
   type        = list(string)
   description = "The address prefix to use for the subnet."
-  default     = ["10.1.0.0/24", "10.2.0.0/24"]
+  default     = ["10.0.0.0/24", "10.0.1.0/24"]
 }
 
 variable "subnet_names" {
