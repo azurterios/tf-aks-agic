@@ -17,12 +17,6 @@ locals {
   redirect_configuration_name    = "rdrcfg"
 }
 
-resource "azurerm_user_assigned_identity" "agw" {
-  location            = var.location
-  resource_group_name = var.resource_group_name
-  name                = "hub-agw1-msi"
-  tags                = var.tags
-}
 
 
 resource "azurerm_application_gateway" "network" {
