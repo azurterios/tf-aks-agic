@@ -135,7 +135,7 @@ module "web_application_firewall" {
       location             = azurerm_resource_group.example.location
 
       custom_name             = "waf01"
-      appgw_private_ip        = "192.168.1.10"
+      appgw_private_ip        = "10.33.1.10"
       appgw_private_subnet_id = module.vnet.vnet_subnets[1]
       pip1_name               = "waf-pip1"
       wafmsi_id = azurerm_user_assigned_identity.agw.id
